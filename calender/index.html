@@ -1,0 +1,47 @@
+<html>
+<head> 
+<title>JavaScript calendar</title>
+<script type="text/javascript" src="main.js"></script> 
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script>
+    var dateNow = new Date();
+    var current = dateNow.getMonth();
+    var next = current;
+</script>
+</head> 
+ 
+<body onload="displayCalendar(current)"> 
+<div class="container marg">
+    <div class="row">
+        <div class="col-sm-2">
+            <button class="btn btn-primary btn-sm col-sm-12" onclick="displayCalendar(--next)"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i>previous</button>
+        </div>
+        <div class="col-sm-7">
+
+        </div>
+        <div class="col-sm-2">
+            <button class="btn btn-primary btn-sm col-sm-12" onclick="displayCalendar(++next)"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>next</button>
+        </div>
+    </div>
+    <div class="row marg">
+        <div class="col-sm-12">
+            <div id="calendar"></div> 
+        </div>
+    </div>
+    <div class="row marg">
+        <div class="col-sm-4"></div>
+        <div class="form-group col-sm-3">
+            <label for="date">Appointment Date:</label>
+            <input type="date" class="form-control" id="date" plceholder="Enter the Date for Appointment">
+        </div>
+    </di5
+    <section style="margin-bottom:50px;"></section>
+</div>
+
+ 
+<script src="https://use.fontawesome.com/6059b49d0e.js"></script>
+
+</body> 
+
+</html>
